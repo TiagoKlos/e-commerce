@@ -1,4 +1,7 @@
-package com.tads.ecommerce.entity.repository;
+package com.tads.ecommerce.repository;
 
-public interface CategoryRepository {
+import com.tads.ecommerce.entity.Category;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoryRepository extends JpaRepository<Category, Long > {
 }
